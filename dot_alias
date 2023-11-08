@@ -1,0 +1,8 @@
+alias cb='flatpak run app.getclipboard.Clipboard'
+alias cat='bat'
+alias tldr='tldr -t base16'
+alias colorls='colorls.ruby3.2'
+
+alias update='sudo-update ; flatpak update -y ; rtx self-update -y ; rtx upgrade ; pip install -U --pre pip pipx pip-autoremove jupyter ptpython pyperclip pythonpy-fork rich tqdm ; pipx upgrade-all'
+alias sudo-update='sudo bash -c "zypper --gpg-auto-import-keys ref -f && zypper dup --allow-arch-change --allow-name-change --allow-vendor-change --recommends -y ; npm install -g @githubnext/github-copilot-cli npm tldr ; gem update"'
+alias clean-cache='rm -rf ~/.config/**/*Cache'
